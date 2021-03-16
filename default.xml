@@ -6,7 +6,7 @@
     remote="aosp" sync-j="4" />
 
   <project path="private/msm-google" name="kernel/msm" >
-    <linkfile src="build.config.no-cfi" dest="build.config" />
+    <linkfile src="build.config.sunfish_no-cfi" dest="build.config" />
     <linkfile src="build_floral.sh" dest="build_floral.sh" />
     <linkfile src="build_sunfish.sh" dest="build_sunfish.sh" />
   </project>
