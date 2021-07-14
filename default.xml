@@ -1,6 +1,6 @@
 <manifest>
   <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
-  <default revision="android-msm-bonito-4.9-android11-qpr2"
+  <default revision="android-msm-bonito-4.9-android11-qpr3"
     remote="aosp" sync-j="4" />
 
   <project path="build" name="kernel/build" revision="master"/>
