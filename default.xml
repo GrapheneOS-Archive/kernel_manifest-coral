@@ -2,7 +2,7 @@
 <manifest>
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
-  <default revision="android-msm-sunfish-4.14-android11-qpr2"
+  <default revision="android-msm-sunfish-4.14-android11-qpr3"
     remote="aosp" sync-j="4" />
 
   <project path="private/msm-google" name="kernel/msm" >
