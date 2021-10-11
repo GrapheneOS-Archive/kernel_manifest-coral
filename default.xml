@@ -1,19 +1,22 @@
 <manifest>
   <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
-  <default revision="android-msm-bonito-4.9-android11-qpr3"
+  <default revision="android-msm-bonito-4.9-android12"
     remote="aosp" sync-j="4" />
 
-  <project path="build" name="kernel/build" revision="master"/>
   <project path="private/msm-google" name="kernel/msm" >
-    <linkfile src="build.config.bonito_no-cfi" dest="build.config" />
+    <linkfile src="build.config.bonito" dest="build.config" />
+    <linkfile src="build_bluecross.sh" dest="build_bluecross.sh" />
+    <linkfile src="build_bonito.sh" dest="build_bonito.sh" />
   </project>
   <project path="private/msm-google/techpack/audio" name="kernel/msm-extra" />
   <project path="private/msm-google-modules/wlan/qca-wifi-host-cmn" name="kernel/msm-modules/qca-wfi-host-cmn" />
   <project path="private/msm-google-modules/wlan/qcacld-3.0" name="kernel/msm-modules/qcacld" />
   <project path="private/msm-google-modules/wlan/fw-api" name="kernel/msm-modules/wlan-fw-api" />
+
+  <project path="build" name="kernel/build" revision="f4f2d2f0665c6031f67d8c84ff98b7d22d5abac1"/>
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="android11-release" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="android11-release" clone-depth="1" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="f71cc7fa68ac644595257d6fdebc2e543cb7041c" clone-depth="1" groups="partner" />
+  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="537e01a6ff78760ee5b69597efdbc47bc721058d" clone-depth="1" groups="partner" />
   <project path="prebuilts-master/misc" name="platform/prebuilts/misc" revision="android11-release" clone-depth="1" />
 </manifest>
 
