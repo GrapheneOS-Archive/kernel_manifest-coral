@@ -2,7 +2,7 @@
 <manifest>
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
-  <default revision="android-msm-sunfish-4.14-android12"
+  <default revision="android-msm-sunfish-4.14-android12-qpr1"
     remote="aosp" sync-j="4" />
 
   <project path="private/msm-google" name="kernel/msm" >
@@ -18,9 +18,9 @@
   <project path="private/msm-google-modules/touch/fts/floral" name="kernel/msm-modules/fts_touch" />
   <project path="private/msm-google-modules/touch/fts/sunfish" name="kernel/msm-modules/fts_touch_s5" />
 
-  <project path="build" name="kernel/build" revision="f4f2d2f0665c6031f67d8c84ff98b7d22d5abac1" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="android11-release" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="android11-release" clone-depth="1" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="537e01a6ff78760ee5b69597efdbc47bc721058d" clone-depth="1" />
-  <project path="prebuilts-master/misc" name="platform/prebuilts/misc" revision="android11-release" clone-depth="1" />
+  <project path="build" name="kernel/build" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" />
+  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
+  <project path="prebuilts-master/misc" name="platform/prebuilts/misc" clone-depth="1" />
 </manifest>
