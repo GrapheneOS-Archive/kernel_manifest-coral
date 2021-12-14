@@ -1,6 +1,6 @@
 <manifest>
   <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
-  <default revision="android-msm-bonito-4.9-android12-qpr1"
+  <default revision="android-msm-coral-4.14-android12-qpr1"
     remote="aosp" sync-j="4" />
 
   <project path="private/msm-google" name="kernel/msm" >
