@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
-  <default revision="android-msm-coral-4.14-android13"
+  <default revision="refs/tags/android-t-qpr1-beta-3_r0.2"
     remote="aosp" sync-j="4" />
 
   <project path="private/msm-google" name="kernel/msm" groups="partner">
