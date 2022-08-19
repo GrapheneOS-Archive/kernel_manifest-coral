@@ -11,6 +11,7 @@
     <linkfile dest="build.config" src="build.config.no-cfi"/>
     <linkfile dest="build_floral.sh" src="build_floral.sh"/>
     <linkfile dest="build_sunfish.sh" src="build_sunfish.sh"/>
+    <linkfile dest="build_grapheneos.sh" src="build_grapheneos.sh" />
   </project>
   <project path="private/msm-google/techpack/audio" name="kernel_google_coral_techpack_audio" groups="partner" remote="grapheneos"/>
   <project path="private/msm-google-modules/data-kernel" name="kernel/msm-modules/data-kernel" groups="partner"/>
