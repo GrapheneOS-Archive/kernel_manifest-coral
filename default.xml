@@ -5,7 +5,7 @@
   <remote  name="grapheneos"
     fetch="https://github.com/GrapheneOS/"
     revision="refs/heads/13" />
-  <default revision="android-msm-sunfish-4.14-android13-qpr2"
+  <default revision="refs/tags/android-13.0.0_r0.71"
     remote="aosp" sync-j="4" />
 
   <project path="private/msm-google" name="kernel_msm-coral" groups="partner" remote="grapheneos">
