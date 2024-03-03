@@ -5,22 +5,25 @@
   <remote  name="grapheneos"
     fetch="https://github.com/GrapheneOS/"
     revision="refs/heads/13" />
+  <remote  name="sxlmnwb"
+    fetch="https://github.com/sxlmnwb/"
+    revision="refs/heads/android-msm-coral-4.14-android13" />
   <default revision="refs/tags/android-13.0.0_r0.130"
     remote="aosp" sync-j="4" />
 
-  <project path="private/msm-google" name="kernel_msm-coral" groups="partner" remote="grapheneos">
+  <project path="private/msm-google" name="msm-coral-4.14" groups="partner" remote="sxlmnwb" clone-depth="1" >
     <linkfile dest="build.config" src="build.config.no-cfi"/>
     <linkfile dest="build_floral.sh" src="build_floral.sh"/>
     <linkfile dest="build_sunfish.sh" src="build_sunfish.sh"/>
   </project>
-  <project path="private/msm-google/techpack/audio" name="kernel_msm-extra-coral" groups="partner" remote="grapheneos"/>
-  <project path="private/msm-google-modules/data-kernel" name="kernel/msm-modules/data-kernel" groups="partner"/>
-  <project path="private/msm-google-modules/wlan/qca-wifi-host-cmn" name="kernel/msm-modules/qca-wfi-host-cmn" groups="partner"/>
-  <project path="private/msm-google-modules/wlan/qcacld-3.0" name="kernel/msm-modules/qcacld" groups="partner"/>
-  <project path="private/msm-google-modules/wlan/fw-api" name="kernel/msm-modules/wlan-fw-api" groups="partner"/>
-  <project path="private/msm-google-modules/touch/fts/floral" name="kernel/msm-modules/fts_touch" groups="partner"/>
-  <project path="private/msm-google-modules/touch/fts/sunfish" name="kernel/msm-modules/fts_touch_s5" groups="partner"/>
-  <project path="build" name="kernel_build-coral" groups="partner" remote="grapheneos"/>
+  <project path="private/msm-google/techpack/audio" name="kernel_msm-extra-coral" groups="partner" remote="grapheneos" clone-depth="1" />
+  <project path="private/msm-google-modules/data-kernel" name="kernel/msm-modules/data-kernel" groups="partner" clone-depth="1" />
+  <project path="private/msm-google-modules/wlan/qca-wifi-host-cmn" name="kernel/msm-modules/qca-wfi-host-cmn" groups="partner" clone-depth="1" />
+  <project path="private/msm-google-modules/wlan/qcacld-3.0" name="kernel/msm-modules/qcacld" groups="partner" clone-depth="1" />
+  <project path="private/msm-google-modules/wlan/fw-api" name="kernel/msm-modules/wlan-fw-api" groups="partner" clone-depth="1" />
+  <project path="private/msm-google-modules/touch/fts/floral" name="kernel/msm-modules/fts_touch" groups="partner" clone-depth="1" />
+  <project path="private/msm-google-modules/touch/fts/sunfish" name="kernel/msm-modules/fts_touch_s5" groups="partner" clone-depth="1" />
+  <project path="build" name="kernel_build-coral" groups="partner" remote="grapheneos" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="partner" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="partner" clone-depth="1" />
   <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="partner" clone-depth="1" />
